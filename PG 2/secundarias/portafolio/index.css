@@ -14,7 +14,7 @@
   padding: 10px 30px 10px 20px;
   position: fixed;
   width: 100%;
-  height: 140px;
+  height: 90px;
   z-index: 200;
 }
 .header_div-logo{
@@ -22,7 +22,7 @@
 }
 .header_div_hr-logo{
   border-left: 2px solid #ffffff;
-  height:100px;
+  height: 50px;
   position: absolute ;
   margin-top: 13px;
 }
@@ -30,17 +30,14 @@
   font-family: 'Pinyon Script', cursive;
   color: #ffffff;
   margin: 10px 30px 15px 20px;
-  font-size: 45px;
+  font-size: 25px;
   letter-spacing: 3px;
 }
 .header_nav_ul-menu{
   display: flex;
 }
-.header_nav_ul-menu_responsive{
-  display: none;
-}
-.header_nav_ul-menu_responsive i{
-  color: #fff;
+.header-responsive {
+    display: none;
 }
 .nav_ul_li-menu{
   padding: 10px;
@@ -53,6 +50,7 @@
 .nav_ul_li_a-menu{
   text-decoration: none;
   color: #ffffff;
+  font-size: 15px;
 }
 .nav_ul_li_a_hr-menu{
   margin: auto;
@@ -70,7 +68,7 @@
 
 }
 .main_section-menuportafolio {
-  padding-top: 140px;
+  padding-top: 90px;
   height: 250px;
 }
 .main_section_nav-menuportafolio{
@@ -398,12 +396,60 @@
     color: #fff;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 500px){
+@media only screen and (min-width: 0px) and (max-width: 505px){
   .main_section_nav_ul-menuportafolio li a{
     font-size: 15px;
   }
   .section_article-inicio{
-    padding: 10px;
+    padding: 10px 10px 20px;
+    height: auto;
+  }
+  .section_div-base-inicio{
+    width: 6%;
+    height: 150px;
+  }
+  .section_article-inicio h2:first-child {
+    font-size: 35px;
+    letter-spacing: 3px;
+  }
+  .section_article-inicio h2:nth-child(2) {
+    font-size: 35px;
+    letter-spacing: 3px;
+  }
+  .section_article-inicio h3 {
+    font-size: 25px;
+  }
+  .main_section-perfil{
+    padding: 10px 50px;
+  }
+  .section_article-perfil p{
+    margin: 25px;
+    font-size: 20px;
+  }
+  .div_titulo-icono-educacion{
+    display: none;
+  }
+  .main_section-educacion{
+    padding: 50px;
+  }
+  .section_article-educacion {
+    height: auto;
+  }
+  .section_article-educacion ul{
+    padding: 20px 50px;
+    margin: 0;
+  }
+  .div_titulo-base-educacion {
+    width: 10% !important;
+  }
+  .div_titulo-texto-educacion {
+    margin-left: 20px !important;
+  }
+  .div_titulo-texto-educacion h2{
+    padding: 8px 20px;
+  }
+  .main_section-experiencia{
+    width: 100%;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 800px){
@@ -419,8 +465,72 @@
   .header_nav_ul-menu{
     display: none;
   }
-  .header_nav_ul-menu_responsive {
+  .header-responsive {
     display: block;
+  }
+  .header-responsive {
+    display: block;
+    margin-right: 5%;
+    margin-top: 10px;
+  }
+  .header-responsive-menu i {
+      font-size: 30px;
+  }
+
+  .header-responsive-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  .header-responsive-menu ul li {
+      background-color: #1d1d1b;
+  }
+
+  .header-responsive-menu ul a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 15px;
+      padding: 10px;
+      font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+  }
+
+  .header-responsive-menu ul li {
+      position: relative;
+      float: left;
+      margin: 0;
+      padding: 0;
+  }
+
+  .header-responsive-menu ul li:hover {
+      background: #1d1d1b;
+  }
+
+  .header-responsive-menu ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: #eee;
+      padding: 0;
+  }
+
+  .header-responsive-menu ul ul li {
+      float: none;
+      width: 200px
+  }
+
+  .header-responsive-menu ul ul a {
+      line-height: 120%;
+      padding: 10px 15px;
+  }
+
+  .header-responsive-menu ul li:hover>ul {
+      display: block;
   }
   .main_section-slider{
     padding-top: 90px;

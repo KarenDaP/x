@@ -7,7 +7,7 @@
   padding: 10px 30px 10px 20px;
   position: fixed;
   width: 100%;
-  height: 140px;
+  height: 90px;
   z-index: 200;
 }
 .header_div-logo{
@@ -15,7 +15,7 @@
 }
 .header_div_hr-logo{
   border-left: 2px solid #ffffff;
-  height:100px;
+  height:50px;
   position: absolute ;
   margin-top: 13px;
 }
@@ -23,17 +23,14 @@
   font-family: 'Pinyon Script', cursive;
   color: #ffffff;
   margin: 10px 30px 15px 20px;
-  font-size: 45px;
+  font-size: 25px;
   letter-spacing: 3px;
 }
 .header_nav_ul-menu{
   display: flex;
 }
-.header_nav_ul-menu_responsive{
-  display: none;
-}
-.header_nav_ul-menu_responsive i{
-  color: #fff;
+.header-responsive {
+    display: none;
 }
 .nav_ul_li-menu{
   padding: 10px;
@@ -46,6 +43,7 @@
 .nav_ul_li_a-menu{
   text-decoration: none;
   color: #ffffff;
+  font-size: 15px;
 }
 .nav_ul_li_a_hr-menu{
   margin: auto;
@@ -59,7 +57,7 @@
 }
 
 .main_section_menu-galeria{
-  padding: 150px 250px 20px;
+  padding: 100px 250px 20px;
 }
 .main_section_menu_h1-galeria{
   margin: 10px 0 20px;
@@ -350,8 +348,72 @@
   .header_nav_ul-menu{
     display: none;
   }
-  .header_nav_ul-menu_responsive {
+  .header-responsive {
     display: block;
+  }
+  .header-responsive {
+    display: block;
+    margin-right: 5%;
+    margin-top: 10px;
+  }
+  .header-responsive-menu i {
+      font-size: 30px;
+  }
+
+  .header-responsive-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  .header-responsive-menu ul li {
+      background-color: #1d1d1b;
+  }
+
+  .header-responsive-menu ul a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 15px;
+      padding: 10px;
+      font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+  }
+
+  .header-responsive-menu ul li {
+      position: relative;
+      float: left;
+      margin: 0;
+      padding: 0;
+  }
+
+  .header-responsive-menu ul li:hover {
+      background: #1d1d1b;
+  }
+
+  .header-responsive-menu ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: #eee;
+      padding: 0;
+  }
+
+  .header-responsive-menu ul ul li {
+      float: none;
+      width: 200px
+  }
+
+  .header-responsive-menu ul ul a {
+      line-height: 120%;
+      padding: 10px 15px;
+  }
+
+  .header-responsive-menu ul li:hover>ul {
+      display: block;
   }
   .main_section-slider{
     padding-top: 90px;
